@@ -1,0 +1,160 @@
+//Gold
+ItemDisplay[GOLD<100 CLVL<20]:
+ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<80)]:
+ItemDisplay[GOLD<5000 CLVL>79]:
+
+ItemDisplay[rvl]: %PURPLE%!%WHITE%r%PURPLE%!
+ItemDisplay[rvs]: %PURPLE%!%GRAY%r 
+
+ItemDisplay[hp1]: %RED%!%GRAY%+ 
+ItemDisplay[hp2]: %RED%!%WHITE%++ 
+ItemDisplay[hp3]: %RED%!%WHITE%+++ 
+ItemDisplay[hp4]: %RED%!%WHITE%h 
+ItemDisplay[hp5]: %RED%!%WHITE%h+ %RED%!  
+
+ItemDisplay[hp1 CLVL>24]:
+ItemDisplay[hp2 CLVL>24]:
+ItemDisplay[hp3 CLVL>39]:
+
+ItemDisplay[mp1]: %BLUE%!%GRAY%+
+ItemDisplay[mp2]: %BLUE%!%WHITE%++
+ItemDisplay[mp3]: %BLUE%!%WHITE%+++
+ItemDisplay[mp4]: %BLUE%!%WHITE%m
+ItemDisplay[mp5]: %BLUE%!%WHITE%m+%BLUE%!   
+
+ItemDisplay[mp1 CLVL>24]
+ItemDisplay[mp2 CLVL>24]:
+ItemDisplay[mp3 CLVL>39]:
+
+ItemDisplay[isc]: %RED%+%GRAY% id // Scroll of Identify
+ItemDisplay[tsc]: %BLUE%+%GRAY% tp // Scroll of Town Portal
+// Gems
+ItemDisplay[gzv]: %WHITE%Amethyst %ORANGE%[%PURPLE%O%ORANGE%]
+ItemDisplay[glw]: %WHITE%Diamond %ORANGE%[%WHITE%O%ORANGE%]
+ItemDisplay[glg]: %WHITE%Emerald %ORANGE%[%GREEN%O%ORANGE%]
+ItemDisplay[glr]: %WHITE%Ruby %ORANGE%[%RED%O%ORANGE%]
+ItemDisplay[glb]: %WHITE%Sapphire %ORANGE%[%BLUE%O%ORANGE%]
+ItemDisplay[gly]: %WHITE%Topaz %ORANGE%[%YELLOW%O%ORANGE%]
+ItemDisplay[skl]: %WHITE%Skull %ORANGE%[%GRAY%O%ORANGE%]
+ItemDisplay[gpv OR gpys]: %ORANGE%P %WHITE%Amethyst %ORANGE%[%PURPLE%O%ORANGE%]%DOT-20%
+ItemDisplay[gpw OR gpys]: %ORANGE%P %WHITE%Diamond %ORANGE%[%WHITE%O%ORANGE%]%DOT-20%
+ItemDisplay[gpg OR gpys]: %ORANGE%P %WHITE%Emerald %ORANGE%[%GREEN%O%ORANGE%]%DOT-20%
+ItemDisplay[gpr OR gpys]: %ORANGE%P %WHITE%Ruby %ORANGE%[%RED%O%ORANGE%]%DOT-20%
+ItemDisplay[gpb OR gpys]: %ORANGE%P %WHITE%Sapphire %ORANGE%[%BLUE%O%ORANGE%]%DOT-20%
+ItemDisplay[gpy OR gpys]: %ORANGE%P %WHITE%Topaz %ORANGE%[%YELLOW%O%ORANGE%]%DOT-20%
+
+ItemDisplay[GEM=1 CLVL>29]: // Hide all Chipped gems when above X character level
+ItemDisplay[GEM=2 CLVL>29]: // Hide all Flawed gems when above X character level
+ItemDisplay[GEM=3 CLVL>29]: // Hide all Normal gems when above X character level
+
+//All Charms
+ItemDisplay[cm2 MAG !ID]: %TAN%*%BLUE% %NAME% %TAN%*
+ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%PURPLE%**%BLUE% %NAME%
+
+ItemDisplay[ETH UNI]: %GRAY%(%WHITE%eth%GRAY%) %GOLD%%NAME%%CONTINUE%
+ItemDisplay[ETH RARE]: %GRAY%(%WHITE%eth%GRAY%) %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[ETH MAG]: %GRAY%(%WHITE%eth%GRAY%) %BLUE%%NAME%%CONTINUE%
+ItemDisplay[ETH NMAG]: %GRAY%(%WHITE%eth%GRAY%) %GRAY%%NAME%%CONTINUE%
+
+// ItemDisplay[ETH]: %NAME% %GRAY%(Eth)%CONTINUE% // Add "[Eth]" to ethereal item's names (eg "Quilted Armor [Eth]")
+ItemDisplay[!RW !ETH SOCK>0]: %NAME% (%SOCKETS%)%CONTINUE% // Add number of sockets to the end of socketed items' names (eg "Quilted Armor [2]")
+ItemDisplay[!RW ETH SOCK>0]:%NAME% (%SOCKETS%)%CONTINUE% // No space between eth and socket display if item is eth (eg "Quilted Armor [Eth][2]")
+ItemDisplay[UNI !ID]: %NAME%%MAP-84% // Leave this uncommented to show and notify for ALL unique item
+
+ItemDisplay[RUNE<15]: %ORANGE%%RUNENAME% %WHITE%(%RUNENUM%)%DOT-76%%CONTINUE% // El-Thul
+ItemDisplay[RUNE>15 RUNE<24]: %RED%** %PURPLE%** %ORANGE%%RUNENAME%  %WHITE%(%RUNENUM%)%MAP-0B%%CONTINUE% // Amn-Mal
+ItemDisplay[RUNE>23]: %RED%** %PURPLE%** %RUNENAME% (%RUNENUM%)%BORDER-50%%CONTINUE% // Ist-Zod
+
+
+ItemDisplay[INF CLVL>5]: // Hide all Low Quality, Cracked, Crude, & Damaged items past character level 10
+ItemDisplay[aqv CLVL>5]: // Hides Arrow quivers past character level 10
+ItemDisplay[cqv CLVL>5]: // Hides Bolt quivers past character level 10
+
+ItemDisplay[MAG !ID amu]: %PURPLE%* %BLUE%%NAME% %WHITE%(%ILVL%)%MAP-97% // All unidentified amulets
+
+// Hide potions
+ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl)]: // Strangling Potion
+ItemDisplay[yps]: %GREEN%!%WHITE%a
+ItemDisplay[wms]: %GREEN%!%WHITE%thaw
+ItemDisplay[vps]:
+
+
+ItemDisplay[SET]: %NAME%%MAP-83%%NOTIFY-B%%CONTINUE%
+ItemDisplay[UNI]: %NAME%%MAP-53%%NOTIFY-E%%CONTINUE%
+ItemDisplay[RW]: %NAME%%MAP-1F%%NOTIFY-F%%CONTINUE%
+
+//Append Enhanced defense/damage to all white/gray items
+ItemDisplay[NMAG ED=10]: %NAME% %BLUE%ED%WHITE%-%RED%10%CONTINUE%
+ItemDisplay[NMAG ED=11]: %NAME% %BLUE%ED%WHITE%-%RED%11%CONTINUE%
+ItemDisplay[NMAG ED=12]: %NAME% %BLUE%ED%WHITE%-%RED%12%CONTINUE%
+ItemDisplay[NMAG ED=13]: %NAME% %BLUE%ED%WHITE%-%RED%13%CONTINUE%
+ItemDisplay[NMAG ED=14]: %NAME% %BLUE%ED%WHITE%-%RED%14%CONTINUE%
+ItemDisplay[NMAG ED=15]: %NAME% %BLUE%ED%WHITE%-%RED%15%CONTINUE%
+
+//Append $ if the item has a value higher than 10k and player is below lvl 24, 20k and player below 45, 30k always
+ItemDisplay[(MAG OR NMAG OR RARE) !RW CLVL<24 PRICE>4999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(MAG OR NMAG OR RARE) !RW CLVL>23 CLVL<45 PRICE>19999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(MAG OR NMAG OR RARE) !RW CLVL>44 PRICE>29999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+
+// Cubes
+ItemDisplay[pk3]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube w/ Hate + Terror keys in Act 5} // Key of Destruction
+ItemDisplay[pk2]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube w/ Destruction + Terror keys in Act 5} // Key of Hate
+ItemDisplay[pk1]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube w/ Destruction + Hate keys in Act 5} // Key of Terror
+
+ItemDisplay[wss OR lbox OR rera OR imra OR upma OR imma OR scou]: %MAP-E0%%NAME% %ORANGE%*
+ItemDisplay[t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18]: %MAP-7F%%NAME% %GREEN%*
+
+//Highlight Good Magic items
+ItemDisplay[jew MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %BLUE%%NAME%%WHITE%   *%TAN%*
+
+//Highlight Good Rare items
+ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-A8%%TAN%*%WHITE%*   %YELLOW%%NAME%%WHITE%   *%TAN%*
+
+ItemDisplay[(crs OR bsd OR lsd) NMAG !RW SOCK=4]: %PURPLE%* %WHITE% %NAME% %PURPLE%* %CONTINUE%
+ItemDisplay[(crs OR bsd OR lsd) NMAG !RW SOCK=0 ILVL>25 ILVL<40]: %PURPLE%* %WHITE%%NAME% %PURPLE%* %CONTINUE%
+
+ItemDisplay[(7wc OR 7pa OR 7s8 OR 7vo OR 7h7 OR 7tr OR 7br OR 7st OR 7p7) (ETH AND (NMAG OR RW)) (SOCK=4 OR SOCK=5)]: %PURPLE%**%WHITE%%NAME% %PURPLE%(%SOCKETS%)
+ItemDisplay[NMAG !INF SOCK=4 POLEARM]:  %PURPLE%**%WHITE%%NAME% %PURPLE%(%SOCKETS%)
+ItemDisplay[NMAG !INF SOCK=4 SPEAR !THROWING]:  %PURPLE%**%WHITE%%NAME% %PURPLE%(%SOCKETS%)
+ItemDisplay[(7vo OR 7tr) (ETH AND !INF) AND (NMAG OR RW) SOCK=0]: %PURPLE%** %WHITE%%NAME%
+ItemDisplay[(7wc OR 7pa OR 7s8 OR 7h7 OR 7br OR 7st) (ETH AND !INF AND !SUP) AND (NMAG OR RW) SOCK=0]: %PURPLE%**%WHITE%%NAME%
+
+// Maps
+ItemDisplay[t11]: %NAME% [T1]%MAP-87% // Map
+ItemDisplay[t12]: %NAME% [T2]%MAP-87% // Map
+ItemDisplay[t13]: %NAME% [T3]%MAP-87% // Map
+ItemDisplay[t14]: %NAME% [T4]%MAP-87% // Map
+ItemDisplay[t15]: %NAME% [T5]%MAP-87% // Map
+ItemDisplay[t16]: %NAME% [T6]%MAP-87% // Ruins of Viz-jun
+ItemDisplay[t17]: %NAME% [T7]%MAP-87% // River of Blood
+ItemDisplay[t18]: %NAME% [T8]%MAP-87% // Lava Map
+
+// Leveling Staff
+ItemDisplay[SK38=3]: %NAME% %ORANGE%+3 Charged Bolt
+ItemDisplay[SK38=2]: %NAME% %ORANGE%+2 Charged Bolt
+ItemDisplay[SK38=1]: %NAME% %ORANGE%+1 Charged Bolt
+
+ItemDisplay[SK44=3]: %NAME% %ORANGE%+3 Frost Nova
+ItemDisplay[SK44=2]: %NAME% %ORANGE%+2 Frost Nova
+
+ItemDisplay[SK48=3]: %NAME% %ORANGE%+3 Nova
+ItemDisplay[SK48=2]: %NAME% %ORANGE%+2 Nova
+
+ItemDisplay[SK47=3]: %NAME% %ORANGE%+3 Fire Ball
+ItemDisplay[SK47=2]: %NAME% %ORANGE%+2 Fire Ball
+
+ItemDisplay[SK383=3]: %NAME% %ORANGE%+3 Lesser Hydra
+ItemDisplay[SK383=2]: %NAME% %ORANGE%+2 Lesser Hydra
+
+ItemDisplay[SK62=3]: %NAME% %ORANGE%+3 Hydra
+ItemDisplay[SK62=2]: %NAME% %ORANGE%+2 Hydra
+ItemDisplay[SK62=1]: %NAME% %ORANGE%+1 Hydra
+
+ItemDisplay[SK36=3]: %NAME% %ORANGE%+3 Fire Bolt
+ItemDisplay[SK36=2]: %NAME% %ORANGE%+2 Fire Bolt
+
+ItemDisplay[NMAG !RW (ARMOR OR WEAPON) SOCK=1 CLVL>30]: // Hides all 1 socket base items after level 30
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR key) QTY>0]: %NAME% %TAN%x%WHITE%%QTY%%CONTINUE%
+
+
+// Default filter (don't filter anything!)
