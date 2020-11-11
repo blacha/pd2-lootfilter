@@ -51,6 +51,16 @@ ItemDisplay[GEM=3 CLVL>29]: // Hide all Normal gems when above X character level
 ItemDisplay[cm2 MAG !ID]: %TAN%*%BLUE% %NAME% %TAN%*
 ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%PURPLE%**%BLUE% %NAME%
 
+ItemDisplay[(crs OR bsd OR lsd) NMAG !RW SOCK=4]: %DOT-D6%%PURPLE%* %WHITE% %NAME% %PURPLE%(%WHITE%%SOCKETS%%PURPLE%) %PURPLE%*
+ItemDisplay[(crs OR bsd OR lsd) NMAG !RW SOCK=0 ILVL>25 ILVL<40]: %DOT-D6%%PURPLE%* %WHITE%%NAME% %PURPLE%*
+
+ItemDisplay[(7wc OR 7pa OR 7s8 OR 7vo OR 7h7 OR 7tr OR 7br OR 7st OR 7p7) (ETH AND (NMAG OR RW)) (SOCK=4 OR SOCK=5)]: %PURPLE%**%WHITE%%NAME% %PURPLE%(%SOCKETS%)
+ItemDisplay[NMAG !INF SOCK=4 POLEARM]:  %PURPLE%**%WHITE%%NAME% %PURPLE%(%WHITE%%SOCKETS%%PURPLE%)
+ItemDisplay[NMAG !INF SOCK=4 SPEAR !THROWING]:  %PURPLE%**%WHITE%%NAME% %PURPLE%(%WHITE%%SOCKETS%%PURPLE%)
+ItemDisplay[(7vo OR 7tr) (ETH AND !INF) AND (NMAG OR RW) SOCK=0]: %PURPLE%** %WHITE%%NAME%
+ItemDisplay[(7wc OR 7pa OR 7s8 OR 7h7 OR 7br OR 7st) (ETH AND !INF AND !SUP) AND (NMAG OR RW) SOCK=0]: %PURPLE%**%WHITE%%NAME%
+
+
 ItemDisplay[ETH UNI]: %GRAY%(%WHITE%eth%GRAY%) %GOLD%%NAME%%CONTINUE%
 ItemDisplay[ETH RARE]: %GRAY%(%WHITE%eth%GRAY%) %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[ETH MAG]: %GRAY%(%WHITE%eth%GRAY%) %BLUE%%NAME%%CONTINUE%
@@ -82,6 +92,7 @@ ItemDisplay[vps]:
 ItemDisplay[SET]: %NAME%%MAP-83%%NOTIFY-B%%CONTINUE%
 ItemDisplay[UNI]: %NAME%%MAP-53%%NOTIFY-E%%CONTINUE%
 ItemDisplay[RW]: %NAME%%MAP-1F%%NOTIFY-F%%CONTINUE%
+ItemDisplay[CRAFT]: %NAME%
 
 //Append Enhanced defense/damage to all white/gray items
 ItemDisplay[NMAG ED=10]: %NAME% %BLUE%ED%WHITE%-%RED%10%CONTINUE%
@@ -92,9 +103,9 @@ ItemDisplay[NMAG ED=14]: %NAME% %BLUE%ED%WHITE%-%RED%14%CONTINUE%
 ItemDisplay[NMAG ED=15]: %NAME% %BLUE%ED%WHITE%-%RED%15%CONTINUE%
 
 //Append $ if the item has a value higher than 10k and player is below lvl 24, 20k and player below 45, 30k always
-ItemDisplay[(MAG OR NMAG OR RARE) !RW CLVL<24 PRICE>4999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
-ItemDisplay[(MAG OR NMAG OR RARE) !RW CLVL>23 CLVL<45 PRICE>19999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
-ItemDisplay[(MAG OR NMAG OR RARE) !RW CLVL>44 PRICE>29999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(MAG OR NMAG OR RARE) (ARMOR OR WEAPON) !RW CLVL<24 PRICE>4999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(MAG OR NMAG OR RARE) (ARMOR OR WEAPON) !RW CLVL>23 CLVL<45 PRICE>19999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
+ItemDisplay[(MAG OR NMAG OR RARE) (ARMOR OR WEAPON) !RW CLVL>44 PRICE>29999]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)%CONTINUE%
 
 // Cubes
 ItemDisplay[pk3]: %ORANGE%%NAME%%MAP-68%{%TAN%Cube w/ Hate + Terror keys in Act 5} // Key of Destruction
@@ -110,14 +121,12 @@ ItemDisplay[jew MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %BLUE%%NAME%%WHITE%   *%TAN%*
 //Highlight Good Rare items
 ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-A8%%TAN%*%WHITE%*   %YELLOW%%NAME%%WHITE%   *%TAN%*
 
-ItemDisplay[(crs OR bsd OR lsd) NMAG !RW SOCK=4]: %PURPLE%* %WHITE% %NAME% %PURPLE%* %CONTINUE%
-ItemDisplay[(crs OR bsd OR lsd) NMAG !RW SOCK=0 ILVL>25 ILVL<40]: %PURPLE%* %WHITE%%NAME% %PURPLE%* %CONTINUE%
-
-ItemDisplay[(7wc OR 7pa OR 7s8 OR 7vo OR 7h7 OR 7tr OR 7br OR 7st OR 7p7) (ETH AND (NMAG OR RW)) (SOCK=4 OR SOCK=5)]: %PURPLE%**%WHITE%%NAME% %PURPLE%(%SOCKETS%)
-ItemDisplay[NMAG !INF SOCK=4 POLEARM]:  %PURPLE%**%WHITE%%NAME% %PURPLE%(%SOCKETS%)
-ItemDisplay[NMAG !INF SOCK=4 SPEAR !THROWING]:  %PURPLE%**%WHITE%%NAME% %PURPLE%(%SOCKETS%)
-ItemDisplay[(7vo OR 7tr) (ETH AND !INF) AND (NMAG OR RW) SOCK=0]: %PURPLE%** %WHITE%%NAME%
-ItemDisplay[(7wc OR 7pa OR 7s8 OR 7h7 OR 7br OR 7st) (ETH AND !INF AND !SUP) AND (NMAG OR RW) SOCK=0]: %PURPLE%**%WHITE%%NAME%
+//Shields
+ItemDisplay[(pab OR pac) (!INF AND ETH) AND (NMAG OR RW) (SOCK=0 OR SOCK=4) RES>34]: %DOT-D6%%GRAY%[%GREEN%res%GRAY%] %NAME%
+ItemDisplay[(pab OR pac) (!INF AND !ETH) AND (NMAG OR RW) (SOCK=0 OR SOCK>2) RES>34]: %DOT-D6%%GRAY%[%GREEN%res%GRAY%] %NAME%
+ItemDisplay[CL3 (!INF AND !ETH) AND (NMAG OR RW) (SOCK=0 OR SOCK>2) (RES>34 AND CLVL<80)]: %GRAY%[%GREEN%res%GRAY%] %NAME%
+ItemDisplay[(ush OR xsh) (!INF AND !ETH) AND (NMAG OR RW)  SOCK>1]: %DOT-D6%%NAME%
+ItemDisplay[uit !INF AND (NMAG OR RW) (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%
 
 // Maps
 ItemDisplay[t11]: %NAME% [T1]%MAP-87% // Map
@@ -139,6 +148,7 @@ ItemDisplay[SK44=2]: %NAME% %ORANGE%+2 Frost Nova
 
 ItemDisplay[SK48=3]: %NAME% %ORANGE%+3 Nova
 ItemDisplay[SK48=2]: %NAME% %ORANGE%+2 Nova
+ItemDisplay[SK48=1]: %NAME% %ORANGE%+1 Nova
 
 ItemDisplay[SK47=3]: %NAME% %ORANGE%+3 Fire Ball
 ItemDisplay[SK47=2]: %NAME% %ORANGE%+2 Fire Ball
