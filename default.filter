@@ -121,6 +121,30 @@ ItemDisplay[jew MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %BLUE%%NAME%%WHITE%   *%TAN%*
 //Highlight Good Rare items
 ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-A8%%TAN%*%WHITE%*   %YELLOW%%NAME%%WHITE%   *%TAN%*
 
+//GG UNIQUES
+ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%NL%%GREEN%pick me up
+
+//Rainbow Facet
+ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%*%ORANGE%*%YELLOW%*%GREEN%*%BLUE%*     %PURPLE%%NAME%%BLUE%     *%GREEN%*%YELLOW%*%ORANGE%*%RED%*%NL%%GREEN%pick me up
+
+//Good SET parts
+ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%*     %NAME%     *%DARK_GREEN%*%RED%*%PURPLE%*
+
+//Craftables
+ItemDisplay[(uvg OR xvg) MAG]: %GRAY%* %BLUE%%NAME% %GRAY%*{%BLUE%This Item %WHITE%+ Perf %RED%O %WHITE%+ %ORANGE%Nef %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%Blood Gloves %WHITE%Mix:}
+ItemDisplay[xtb MAG]: %GRAY%* %BLUE%%NAME% %GRAY%*{%BLUE%This Item %WHITE%+ Perf %RED%O %WHITE%+ %ORANGE%Eth %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%Blood Boots %WHITE%Mix:}
+ItemDisplay[(xlg OR ulg) MAG]: %GRAY%* %BLUE%%NAME% %GRAY%*{%BLUE%This Item %WHITE%+ Perf %PURPLE%O %WHITE%+ %ORANGE%Ort %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%Caster Gloves %WHITE%Mix:}
+ItemDisplay[(uvc OR zvb) MAG]: %GRAY%* %BLUE%%NAME% %GRAY%*{%BLUE%This Item %WHITE%+ Perf %PURPLE%O %WHITE%+ %ORANGE%Ith %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%Caster Belt %WHITE%Mix:}
+ItemDisplay[(umg OR xmg) MAG]: %GRAY%* %BLUE%%NAME% %GRAY%*{%BLUE%This Item %WHITE%+ Perf %BLUE%O %WHITE%+ %ORANGE%Ort %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%HitPower Gloves %WHITE%Mix:}
+ItemDisplay[uit MAG]: %GRAY%* %BLUE%%NAME% %GRAY%*{%BLUE%This Item %WHITE%+ Perf %GREEN%O %WHITE%+ %ORANGE%Nef %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%Safety Shield %WHITE%Mix:}
+ItemDisplay[amu MAG]: %NAME%{%BLUE%This Item %WHITE%+ Perf %PURPLE%O %WHITE%+ %ORANGE%Ral %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%Caster Amulet %WHITE%Mix:}
+ItemDisplay[rin MAG]: %NAME%{%BLUE%This Item %WHITE%+ Perf %RED%O %WHITE%+ %ORANGE%Sol %WHITE%+ %BLUE%Jewel%NL%%TAN%Note%WHITE%: To craft %ORANGE%Blood Ring %WHITE%Mix:}
+
+//Memory
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) (NMAG OR RW) SK58>2 (SOCK=0 OR SOCK=4)]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME%
+ItemDisplay[(wst OR 8ws OR 6ws) (NMAG OR RW) SK58>2 SOCK=0 (!INF AND !SUP)]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME%
+ItemDisplay[(wst OR 8ws OR 6ws) (NMAG OR RW) SK58>2 SOCK=4]: %DOT-D6%%GRAY%[%ORANGE%+3 es%GRAY%] %NAME%
+
 //Shields
 ItemDisplay[(pab OR pac) (!INF AND ETH) AND (NMAG OR RW) (SOCK=0 OR SOCK=4) RES>34]: %DOT-D6%%GRAY%[%GREEN%res%GRAY%] %NAME%
 ItemDisplay[(pab OR pac) (!INF AND !ETH) AND (NMAG OR RW) (SOCK=0 OR SOCK>2) RES>34]: %DOT-D6%%GRAY%[%GREEN%res%GRAY%] %NAME%
@@ -163,8 +187,21 @@ ItemDisplay[SK62=1]: %NAME% %ORANGE%+1 Hydra
 ItemDisplay[SK36=3]: %NAME% %ORANGE%+3 Fire Bolt
 ItemDisplay[SK36=2]: %NAME% %ORANGE%+2 Fire Bolt
 
+//Essences
+ItemDisplay[tes]: %NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}%CONTINUE%
+ItemDisplay[ceh]: %NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}%CONTINUE%
+ItemDisplay[bet]: %NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}%CONTINUE%
+ItemDisplay[fed]: %NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}%CONTINUE%
+
+//Uber Keys
+ItemDisplay[pk1]: %NAME%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}%CONTINUE%
+ItemDisplay[pk2]: %NAME%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}%CONTINUE%
+ItemDisplay[pk3]: %NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}%CONTINUE%
+
 ItemDisplay[NMAG !RW (ARMOR OR WEAPON) SOCK=1 CLVL>30]: // Hides all 1 socket base items after level 30
-ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR key) QTY>0]: %NAME% %TAN%x%WHITE%%QTY%%CONTINUE%
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR key) QTY>0]: %NAME% %GRAY%x%WHITE%%QTY%%CONTINUE%
+
+
 
 
 // Default filter (don't filter anything!)
