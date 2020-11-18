@@ -73,9 +73,9 @@ ItemDisplay[!RW !ETH SOCK>0]: %NAME% (%SOCKETS%)%CONTINUE% // Add number of sock
 ItemDisplay[!RW ETH SOCK>0]:%NAME% (%SOCKETS%)%CONTINUE% // No space between eth and socket display if item is eth (eg "Quilted Armor [Eth][2]")
 ItemDisplay[UNI !ID]: %NAME%%MAP-84% // Leave this uncommented to show and notify for ALL unique item
 
-ItemDisplay[RUNE<15]: %ORANGE%%RUNENAME% %WHITE%(%RUNENUM%)%DOT-76%%CONTINUE% // El-Thul
-ItemDisplay[RUNE>15 RUNE<24]: %RED%** %PURPLE%** %ORANGE%%RUNENAME%  %WHITE%(%RUNENUM%)%MAP-0B%%CONTINUE% // Amn-Mal
-ItemDisplay[RUNE>23]: %RED%** %PURPLE%** %RUNENAME% (%RUNENUM%)%BORDER-50%%CONTINUE% // Ist-Zod
+ItemDisplay[RUNE<16]: %ORANGE%%RUNENAME% %WHITE%(%RUNENUM%)%DOT-76%%CONTINUE% // El-Thul
+ItemDisplay[RUNE>15 RUNE<24]: %GREEN%**%PURPLE%** %ORANGE%%RUNENAME%  %WHITE%(%RUNENUM%)%MAP-0B%%CONTINUE% // Amn-Mal
+ItemDisplay[RUNE>23]: %RED%**%GREEN%**%PURPLE%** %RUNENAME% (%RUNENUM%) %RED%**%GREEN%**%PURPLE%**%BORDER-50%%CONTINUE% // Ist-Zod
 
 
 ItemDisplay[INF CLVL>5]: // Hide all Low Quality, Cracked, Crude, & Damaged items past character level 10
