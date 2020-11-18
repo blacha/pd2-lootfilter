@@ -12,7 +12,7 @@ ItemDisplay[hp1]: %RED%!%GRAY%+
 ItemDisplay[hp2]: %RED%!%WHITE%++ 
 ItemDisplay[hp3]: %RED%!%WHITE%+++ 
 ItemDisplay[hp4]: %RED%!%WHITE%h 
-ItemDisplay[hp5]: %RED%!%WHITE%h+ %RED%!  
+ItemDisplay[hp5]: %RED%!%WHITE%h+%RED%!  
 
 ItemDisplay[hp1 CLVL>24]:
 ItemDisplay[hp2 CLVL>24]:
