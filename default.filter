@@ -162,30 +162,40 @@ ItemDisplay[t16]: %NAME% [T6]%MAP-87% // Ruins of Viz-jun
 ItemDisplay[t17]: %NAME% [T7]%MAP-87% // River of Blood
 ItemDisplay[t18]: %NAME% [T8]%MAP-87% // Lava Map
 
-// Leveling Staff
-ItemDisplay[SK38=3]: %NAME% %ORANGE%+3 Charged Bolt
-ItemDisplay[SK38=2]: %NAME% %ORANGE%+2 Charged Bolt
-ItemDisplay[SK38=1]: %NAME% %ORANGE%+1 Charged Bolt
+// Leveling items
+ItemDisplay[SK38=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% cb]
+ItemDisplay[SK38=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% cb]
+ItemDisplay[SK38=1]: %NAME% %GRAY%[+1%GRAY% cb]
 
-ItemDisplay[SK44=3]: %NAME% %ORANGE%+3 Frost Nova
-ItemDisplay[SK44=2]: %NAME% %ORANGE%+2 Frost Nova
+ItemDisplay[SK44=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% fn]
+ItemDisplay[SK44=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% fn]
 
-ItemDisplay[SK48=3]: %NAME% %ORANGE%+3 Nova
-ItemDisplay[SK48=2]: %NAME% %ORANGE%+2 Nova
-ItemDisplay[SK48=1]: %NAME% %ORANGE%+1 Nova
+ItemDisplay[SK48=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% Nova]
+ItemDisplay[SK48=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% Nova]
+ItemDisplay[SK48=1]: %NAME% %GRAY%[+1%GRAY% Nova]
 
-ItemDisplay[SK47=3]: %NAME% %ORANGE%+3 Fire Ball
-ItemDisplay[SK47=2]: %NAME% %ORANGE%+2 Fire Ball
+ItemDisplay[SK47=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% fb]
+ItemDisplay[SK47=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% fb]
 
-ItemDisplay[SK383=3]: %NAME% %ORANGE%+3 Lesser Hydra
-ItemDisplay[SK383=2]: %NAME% %ORANGE%+2 Lesser Hydra
+ItemDisplay[SK383=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% lh]
+ItemDisplay[SK383=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% lh]
 
-ItemDisplay[SK62=3]: %NAME% %ORANGE%+3 Hydra
-ItemDisplay[SK62=2]: %NAME% %ORANGE%+2 Hydra
-ItemDisplay[SK62=1]: %NAME% %ORANGE%+1 Hydra
+ItemDisplay[SK62=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% Hydra]
+ItemDisplay[SK62=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% Hydra]
+ItemDisplay[SK62=1]: %NAME% %GRAY%[+1%GRAY% Hydra]
 
-ItemDisplay[SK36=3]: %NAME% %ORANGE%+3 Fire Bolt
-ItemDisplay[SK36=2]: %NAME% %ORANGE%+2 Fire Bolt
+ItemDisplay[SK56=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% m]
+ItemDisplay[SK56=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% m]
+ItemDisplay[SK56=1]: %NAME% %GRAY%[+1%GRAY% m]
+
+ItemDisplay[SK36=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% fb]
+ItemDisplay[SK36=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% fb]
+
+ItemDisplay[SK67=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% Teeth]
+ItemDisplay[SK67=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% Teeth]
+
+ItemDisplay[SK84=3]: %NAME% %GRAY%[%PURPLE%+3%GRAY% bs]
+ItemDisplay[SK84=2]: %NAME% %GRAY%[%ORANGE%+2%GRAY% bs]
 
 //Essences
 ItemDisplay[tes]: %NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}%CONTINUE%
