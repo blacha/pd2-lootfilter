@@ -31,13 +31,13 @@ ItemDisplay[mp3 CLVL>39]:
 ItemDisplay[isc]: %RED%+%GRAY% id // Scroll of Identify
 ItemDisplay[tsc]: %BLUE%+%GRAY% tp // Scroll of Town Portal
 // Gems
-ItemDisplay[gzv OR gzvs]: %WHITE%Amethyst %ORANGE%[%PURPLE%O%ORANGE%]%CONTINUE%
-ItemDisplay[glw OR glws]: %WHITE%Diamond %ORANGE%[%WHITE%O%ORANGE%]%CONTINUE%
-ItemDisplay[glg OR glgs]: %WHITE%Emerald %ORANGE%[%GREEN%O%ORANGE%]%CONTINUE%
-ItemDisplay[glr OR glrs]: %WHITE%Ruby %ORANGE%[%RED%O%ORANGE%]%CONTINUE%
-ItemDisplay[glb OR glbs]: %WHITE%Sapphire %ORANGE%[%BLUE%O%ORANGE%]%CONTINUE%
-ItemDisplay[gly OR glys]: %WHITE%Topaz %ORANGE%[%YELLOW%O%ORANGE%]%CONTINUE%
-ItemDisplay[skl OR skls]: %WHITE%Skull %ORANGE%[%GRAY%O%ORANGE%]%CONTINUE%
+ItemDisplay[gzv OR gzvs]: %ORANGE%Amethyst [%PURPLE%O%ORANGE%]%CONTINUE%
+ItemDisplay[glw OR glws]: %ORANGE%Diamond [%ORANGE%O%ORANGE%]%CONTINUE%
+ItemDisplay[glg OR glgs]: %ORANGE%Emerald [%GREEN%O%ORANGE%]%CONTINUE%
+ItemDisplay[glr OR glrs]: %ORANGE%Ruby [%RED%O%ORANGE%]%CONTINUE%
+ItemDisplay[glb OR glbs]: %ORANGE%Sapphire [%BLUE%O%ORANGE%]%CONTINUE%
+ItemDisplay[gly OR glys]: %ORANGE%Topaz [%YELLOW%O%ORANGE%]%CONTINUE%
+ItemDisplay[skl OR skls]: %ORANGE%Skull [%GRAY%O%ORANGE%]%CONTINUE%
 ItemDisplay[gpv OR gpvs]: %ORANGE%P %WHITE%Amethyst %ORANGE%[%PURPLE%O%ORANGE%]%DOT-20%%CONTINUE%
 ItemDisplay[gpw OR gpws]: %ORANGE%P %WHITE%Diamond %ORANGE%[%WHITE%O%ORANGE%]%DOT-20%%CONTINUE%
 ItemDisplay[gpg OR gpgs]: %ORANGE%P %WHITE%Emerald %ORANGE%[%GREEN%O%ORANGE%]%DOT-20%%CONTINUE%
